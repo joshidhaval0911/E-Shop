@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0 !important;
+    outline-offset: 0;
+}
+
+/* Variable Define */
+
+:root {
+    --primary-color: rgb(255, 155, 92);
+    --secondry-color: rgb(207, 207, 207);
+    --third-color: #f98169;
+    --white-color: #fff;
+    --text-color: #964300;
+    --text-gray: #999;
+    --black-color: #000;
+    --primary-font: 'Fira Sans', sans-serif;
+    --secondry-font: 'Catamaran', sans-serif;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--primary-font);
+    font-size: 100%;
+    font-weight: 400;
+}
+
+/* Navbar CSS */
+
+.navigation-wrap {
+    background: rgb(244, 232, 213);
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.navigation-wrap .nav-item {
+    padding: 0 0.625rem;
+    transition: all 200ms linear;
+}
+
+.navbar>.container-fluid {
+    justify-content: start !important;
+}
+.navbar-brand {
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -o-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.brandName {
+    text-decoration: none;
+    font-family: var(--primary-font);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -o-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+/* .brandName:hover {
+    filter: contrast(1000);
+} */
+
+.navbar-nav {
+    text-align: center;
+}
+
+.navbar-nav a {
+    color: var(--text-color);
+    -webkit-transition: all 0.1s ease-in 0s;
+    -o-transition: all 0.1s ease-in 0s;
+    -moz-transition: all 0.1s ease-in 0s;
+    transition: all 0.1s ease-in 0s;
+}
+
+.navbar-nav a:hover {
+    /* border-radius: 10%; */
+    color: var(--text-color);
+    /* color: white;
+    background-color: #0063a9; */
+    border-bottom: 1px solid var(--text-color);
+}
+
+.srchBar {
+    width: 40%;
+}
+
+.searchBox {
+    border: none;
+    /* border: 1px solid #964300; */
+    transition: all .2s ease-in;
+    width: 100%;
+    border: none;
+        border-radius: 0;
+    }
+    
+    .searchBox:hover,
+    .searchBox:focus {
+        outline: none;
+        box-shadow: none;
+        border: 1px solid #964300;
+    }
+    
+    /* Custom Button */
+    
+    .btn-brown {
+        color: white;
+        background-color: #964300;
+    }
+    
+    .btn-brown:hover {
+        color: #964300;
+        border: 1px solid #964300;
+}
